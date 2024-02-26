@@ -1,0 +1,40 @@
+.choose {
+  &__card {
+    @include center-item;
+    padding-top: 71px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: $primary_color;
+    text-align: center;
+  }
+  &__card__busines {
+    border: 1px solid rgba(128, 128, 128, 0.231);
+    padding: 31px 32px 31px 32px;
+    transition: 0.3s;
+
+    &__title {
+      max-width: 145px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      color: $primary_color;
+    }
+    &__text {
+      max-width: 232px;
+      font-family: $nav_font_title;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: $medium-gray;
+    }
+  }
+  &__card__busines:hover {
+    background-color: $button_color;
+    cursor: pointer;
+  }
+}

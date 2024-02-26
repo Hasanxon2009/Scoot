@@ -1,0 +1,28 @@
+nav {
+  background-color: $primary_color;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.navbar {
+  @include center-item;
+  &__menu {
+    @include center-item;
+    column-gap: 24px;
+    padding: 26px 0;
+    &__link {
+      font-family: $nav_font_title;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: $white_color;
+      transition: 0.2s;
+    }
+    &__link:hover {
+      border-bottom: 3px solid $button_color;
+      cursor: pointer;
+    }
+  }
+}

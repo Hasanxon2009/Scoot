@@ -1,0 +1,50 @@
+.popular-blogs {
+  margin-top: 94px;
+  &__card {
+    @include center-item;
+  }
+  &__title {
+    max-width: 215px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  &__card__students__img {
+    max-width: 405px;
+    height: 318px;
+    width: 100%;
+  }
+  &__card__students__text {
+    font-family: $nav_font_title;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $dark-gray;
+    padding-top: 32px;
+    &__span {
+      color: $purple_color;
+    }
+  }
+  &__card__students__title {
+    max-width: 405px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -1px;
+    color: $primary_color;
+    padding-top: 16px;
+  }
+  &__card__students__text2 {
+    max-width: 405px;
+    opacity: 70%;
+    font-family: $nav_font_title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $primary_color;
+    padding-top: 16px;
+  }
+}

@@ -1,0 +1,24 @@
+footer {
+  margin-top: 73px;
+  background-color: $primary_color;
+  padding: 54px 80px 54px 80px;
+  position: sticky;
+}
+.footer-sticky {
+  @include center-item;
+  &__left__title,
+  &__left__text {
+    max-width: 361px;
+    opacity: 70%;
+    font-family: $nav_font_title;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $white_color;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 26.67px;
+  }
+}

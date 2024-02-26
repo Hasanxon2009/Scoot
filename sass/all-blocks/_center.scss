@@ -1,0 +1,122 @@
+.center {
+  @include for-tablet {
+    display: flex;
+  }
+  &__img {
+    position: relative;
+    transform: translateY(100px);
+    max-width: 974px;
+    width: 100%;
+    @include for-tablet {
+      display: none;
+    }
+  }
+  &__img2 {
+    display: none;
+    @include for-tablet {
+      display: block;
+      position: relative;
+      margin-left: 85px;
+      height: 513px;
+    }
+    @include for-phone {
+      display: none;
+    }
+  }
+  &__menu1 {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 140px;
+    @include for-tablet {
+      display: block;
+    }
+    @include for-phone {
+      display: block;
+    }
+  }
+  &__menu {
+    margin-top: 48px;
+    @include for-tablet {
+      display: flex;
+    }
+    @include for-phone {
+      display: flex;
+      justify-content: center;
+    }
+    &__img {
+      position: absolute;
+      margin-top: -145px;
+      display: flex;
+      @include for-tablet {
+        margin-left: -86px;
+        margin-top: -35px;
+      }
+      @include for-phone {
+        margin: -54px auto;
+        display: flex;
+        justify-content: center;
+        max-width: 56px;
+        width: 100%;
+        display: block;
+      }
+    }
+    &__h3 {
+      font-family: $header_font;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: $big_text_color;
+      padding-top: 24px;
+      @include for-tablet {
+        padding-top: 0;
+        margin-left: 65px;
+      }
+      @include for-phone {
+        max-width: 311px;
+        width: 100%;
+        padding-top: 24px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    &__text {
+      margin-top: 27px;
+      font-family: $main_font;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $small_text_color;
+      max-width: 336px;
+      width: 100%;
+      @include for-tablet {
+        margin-left: 65px;
+        max-width: 398px;
+        width: 100%;
+      }
+      @include for-phone {
+        text-align: center;
+        max-width: 311px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 27px;
+        margin-bottom: 50px;
+      }
+    }
+    &__text2 {
+      max-width: 320px;
+      width: 100%;
+      @include for-tablet {
+        max-width: 376px;
+        width: 100%;
+      }
+    }
+    &__text3 {
+      max-width: 328px;
+      width: 100%;
+      @include for-tablet {
+        max-width: 398px;
+        width: 100%;
+      }
+    }
+  }
+}

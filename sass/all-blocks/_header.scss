@@ -1,0 +1,241 @@
+header {
+  position: relative;
+}
+
+nav {
+  background-color: $white_color;
+  width: 100%;
+  padding: 24px 0 20px 0;
+  position: fixed;
+  z-index: 3;
+  @include for-phone {
+    padding: 20px 0 20px 0;
+  }
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  &__menu {
+    align-items: center;
+    display: flex;
+    column-gap: 58px;
+    @include for-phone {
+    }
+    &__title {
+      display: flex;
+      column-gap: 32px;
+      @include for-phone {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 53px;
+        background-color: $big_text_color;
+        height: 100vh;
+        width: 256px;
+        padding: 64px 32px;
+        row-gap: 24px;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+      }
+    }
+    &__href {
+      text-decoration: none;
+      color: $small_text_color;
+      font-family: $header_font;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 700;
+      transition: 0.2s ease-in;
+    }
+    &__href:hover {
+      text-decoration: none;
+      color: $button_color;
+      font-family: $header_font;
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 700;
+    }
+  }
+  .btn {
+    color: $white_color;
+    font-family: $header_font;
+    background-color: $button_color;
+    border: 3px solid $button_color;
+    padding: 14px 39px;
+    transition: 0.5s ease-in;
+    margin-right: 0px;
+    @include for-phone {
+      display: none;
+    }
+  }
+  .btn:hover {
+    color: $button_color;
+    font-family: $header_font;
+    background-color: $white_color;
+    border: 3px solid $button_color;
+    padding: 14px 39px;
+  }
+  &__add {
+    display: none;
+    @include for-phone {
+      display: block;
+    }
+    &__btn {
+      @include for-phone {
+        background: none;
+        border: none;
+      }
+    }
+  }
+  &__remove {
+    display: none;
+    @include for-phone {
+      display: block;
+    }
+    &__btn {
+      @include for-phone {
+        background: none;
+        border: none;
+      }
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../../img/desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 5px;
+  @include for-tablet {
+    background-image: url(../../img/for-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position-x: -350px;
+  }
+  @include for-phone {
+    background-image: url(../../img/mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: 60px;
+    @include for-phone {
+      background-position-y: 0;
+    }
+  }
+  &__content {
+    padding-top: 170px;
+    @include for-tablet {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+    @include for-phone {
+      padding-top: 39%;
+    }
+    @include for-phone {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+    }
+    &__stick {
+      display: flex;
+      align-items: center;
+      column-gap: 57px;
+    }
+    &__button {
+      margin-left: 90px;
+      margin-top: 40px;
+    }
+    &__title {
+      max-width: 500px;
+      width: 100%;
+      font-family: $header_font;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      color: $white_color;
+      @include for-tablet {
+        text-align: center;
+        margin: 0 auto;
+      }
+      @include for-phone {
+        max-width: 311px;
+        width: 100%;
+        font-size: 40px;
+        font-style: normal;
+        line-height: 40px;
+        /* 100% */
+        letter-spacing: -1.786px;
+      }
+    }
+    &__look {
+      display: none;
+      @include for-tablet {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        margin-left: -30px;
+        margin-top: 15px;
+      }
+    }
+    &__text {
+      max-width: 405px;
+      width: 100%;
+      margin-left: 90px;
+      font-family: $main_font;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: $white_color;
+      margin-top: 40px;
+      @include for-tablet {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 573px;
+        width: 100%;
+      }
+      @include for-phone {
+        max-width: 311px;
+        width: 100%;
+        font-size: 15px;
+        font-style: normal;
+      }
+    }
+    &__img {
+      transform: translateY(75px);
+      @include for-tablet {
+        display: none;
+      }
+    }
+  }
+}
+
+.btn {
+  color: $white_color;
+  font-family: $header_font;
+  background-color: $button_color;
+  border: 3px solid $button_color;
+  padding: 14px 39px;
+  transition: 0.5s ease-in;
+  @include for-tablet {
+    margin: 0 auto;
+    display: flex;
+  }
+  @include for-phone {
+  }
+}
+
+.btn:hover {
+  color: $button_color;
+  font-family: $header_font;
+  background-color: $white_color;
+  border: 3px solid $button_color;
+  padding: 14px 39px;
+}
+
+.show {
+  transform: translateX(0);
+}

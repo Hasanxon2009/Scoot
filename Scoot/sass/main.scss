@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@import "./all-blocks/fonts";
+@import "./all-blocks/veriables";
+@import "./all-blocks/mixins";
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1106px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@import "./all-blocks/header";
+@import "./all-blocks/center";
+@import "./all-blocks/main2";
+@import "./all-blocks/footer";
